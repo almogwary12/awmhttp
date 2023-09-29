@@ -8,6 +8,7 @@ func processEvent cCode
 			cCode += " (request(), response())"
 		ok
 		return cCode
-I call the request and response func instead of passing the response code this to call route function like this oserver.route("/", :Get, func req, res{
-  res.set_content("<h1>hello</h1>", "text/html")
+I call the request and response func instead of passing the response code this to call route function like this 
+oserver.route("/", :Get, func req, res{
+  res.set_content("hello", "text/html")
 })
